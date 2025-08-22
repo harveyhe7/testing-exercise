@@ -4,7 +4,7 @@ public class TransferService {
         if (from == null || to == null) {
             throw new IllegalArgumentException("Accounts cannot be null");
         }
-        if (amount <= 0) {
+        if (amount < 0) {
             throw new IllegalArgumentException("Transfer amount must be positive");
         }
 
